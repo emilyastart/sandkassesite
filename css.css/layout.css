@@ -1,0 +1,364 @@
+.top-header {
+  display: flex;
+  align-items: center;
+  padding: 2rem 3rem;
+  background-color: #e5d8ca;
+  border: 2px solid #3e2f1c;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 2rem;
+}
+
+/* Logo – fritstående billede */
+.logo {
+  flex: 0 0 auto;
+  margin-right: 1rem;
+  padding: 0;
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.logo img {
+  max-height: 80px;
+  width: auto;
+  display: block;
+}
+
+/* Stor overskrift */
+.title {
+  flex: 1;
+  font-size: 2.4rem;
+  font-weight: 300;
+  background-color: #fff8ec;
+  padding: 1rem 2rem;
+  border: 2px solid #3e2f1c;
+  border-radius: 8px;
+  color: #3e2f1c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+/* Menu-knap */
+.menu {
+  flex: 0 0 auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.8rem 1.2rem;
+  background-color: #fff8ec;
+  border: 2px solid #3e2f1c;
+  border-radius: 8px;
+  color: #3e2f1c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu:hover {
+  background-color: #3e2f1c;
+  color: #fff;
+}
+
+/* Hero sektion */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-billede {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 80vh;
+  border: 3px solid #3e2f1c;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.hero-billede img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Coffee section */
+.coffee-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 3rem;
+  background-color: #e5d8ca;
+  border-radius: 10px;
+}
+
+.billede1 {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 2px solid #3e2f1c;
+}
+
+.billede1 img {
+  width: 800px;
+  height: 600px;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay-text {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+.tekst-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 250px;
+}
+
+.overskrift {
+  border: 2px solid #3e2f1c;
+  background-color: #fff8ec;
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-left: 6em;
+  color: #6b5d48;
+}
+
+.underoverskrift {
+  border: 2px solid #3e2f1c;
+  background-color: #fff8ec;
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-style: italic;
+  color: #6b5d48;
+}
+
+.tekstafsnit {
+  border: 2px solid #3e2f1c;
+  background-color: #fff8ec;
+  padding: 1.2rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Image grid section */
+.image-layout {
+  padding: 2rem;
+  background-color: #fdfaf6;
+  color: #3e2f1c;
+}
+
+.underoverskrift {
+  font-size: 1.5rem;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.grid-wrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Venstre billede */
+.billede2 {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.billede2 img {
+  width: 100%;
+  height: 1035px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #3e2f1c;
+}
+
+/* Højre side */
+.right-side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-width: 300px;
+}
+
+.billede3 img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #3e2f1c;
+}
+
+.billede-par {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.billede4,
+.billede5 {
+  flex: 1;
+}
+
+.billede4 img,
+.billede5 img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #3e2f1c;
+}
+
+/* footer */
+.footer-wrapper {
+  background-color: #ebe1d5; /* beige baggrund */
+  padding: 2rem 0;
+  border-radius: 8px;
+}
+
+.footer {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 1.5rem;
+  background-color: #8b785e; /* brun boks */
+  text-align: center;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 2px solid #3e2f1c;
+  color: #fff;
+}
+
+.footer-links a {
+  margin: 0 1rem;
+  color: #fff;
+  text-decoration: none; /* fjerner underlinje */
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #312616; /* mørk brun ved hover */
+}
+/* Mobil layout */
+@media (max-width: 600px) {
+  .top-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .menu {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  } /* Hero – tekst over billede */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-content {
+    order: -1; /* flytter teksten over billedet */
+    text-align: center;
+    color: #fbfaf9;
+  }
+
+  /* Coffee section – tekst over billede */
+  .coffee-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .overskrift {
+    padding-right: 4em;
+  }
+  .tekst-side {
+    order: -1; /* sikrer tekst kommer før billede */
+  }
+  .billede1 {
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    border: 2px solid #3e2f1c;
+  }
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .billede2,
+  .billede3,
+  .billede4,
+  .billede5 {
+    flex: unset; /* fjern flex på mobil */
+    min-width: unset;
+    max-width: unset;
+  }
+
+  .billede2 img,
+  .billede3 img,
+  .billede4 img,
+  .billede5 img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* gør dem kvadratiske */
+    height: auto;
+    object-fit: cover;
+  }
+
+  .right-side,
+  .billede-par {
+    display: contents; /* opløser containerne på mobil */
+  }
+}
